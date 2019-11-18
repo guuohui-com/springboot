@@ -1,0 +1,25 @@
+spring:
+  profiles:
+    active: dev
+
+  thymeleaf:
+    mode: HTML5
+
+img:
+  local:
+    path: E:\\实训视频\\springMVC\\upload
+
+qiniu:
+   accessKey: vwHUGmPDR-TlUUXAUXxMsdkHd_uVIy-qu6zEw6Gv
+   secretKey: OxMNmCf1GQkrmNXOI1KInrovZVgEGIqZDs0Earp7
+   bucket: neuedu_springbootbusiness
+
+mail:
+   host: smtp.163.com #邮箱服务器地址
+   username: love_zyy_hui@163.com #用户名love_zyy_hui@163.com
+   password: guohui666 #开启POP3之后设置的客户端授权码
+   default-encoding: UTF-8 #编码
+   # 超时时间（可选）
+#   connectiontimeout=50000
+#   timeout=30000
+#   writetimeout=50000

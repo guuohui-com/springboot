@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+  <properties resource="db.properties"></properties>
+  <!--配置log4j日志-->
+<settings>
+  <setting name="logImpl" value="LOG4J"/>
+</settings>
+
+    <!-- 自定义类的别名配置-->
+  <typeAliases>
+        <typeAlias type="com.neuedu.pojo.UserInfo" alias="userinfo"></typeAlias>
+  </typeAliases>
+
+  <!--<environments default="development">
+    <environment id="development">
+      <transactionManager type="JDBC">
+      </transactionManager>
+      <dataSource type="POOLED">
+        <property name="driver" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="${url}"/>
+        <property name="username" value="${user}"/>
+        <property name="password" value="${password}"/>
+      </dataSource>
+    </environment>
+  </environments>
+-->
+  <!--<mappers>-->
+	   <!--&lt;!&ndash; <mapper resource="com/neuedu/dao/Ilogindao.xml"/>&ndash;&gt;-->
+  <!--</mappers>-->
+
+</configuration>
